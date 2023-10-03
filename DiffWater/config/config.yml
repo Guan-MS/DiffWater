@@ -1,0 +1,74 @@
+name: "UIEB"
+gpu_ids: [0,1]
+
+path:
+    log: "logs"
+    tb_logger: "tb_logger"
+    results: "results"
+    checkpoint: "checkpoint"
+    resume_state: #experiments/UIEB_230803_200446/checkpoint/I860000_E607 #
+
+datasets:
+    train:
+        name: "UIEB"
+        dataroot: "E:/UI-data/UIEB/train"
+        resolution: 256
+        batch_size: 1
+        num_workers: 8
+        use_shuffle: true
+        data_len: -1
+    val:
+        name: "UIEB"
+        dataroot: "E:\\UI-data\\UIEB\\TEST"
+        resolution: 256
+        use_shuffle: true
+        data_len: -1
+model:
+    unet:
+        in_channel: 6
+        out_channel: 3
+        inner_channel: 64
+        norm_groups: 16
+        channel_multiplier: [1, 2, 4, 8, 16]
+        attn_res: [] #16
+        res_blocks: 1
+        dropout: 0
+        channels: 1024
+        ratio: 1
+        cond_in_dim: 3
+        image_size: 256
+    diffusion:
+        image_size: 256
+        channels: 3
+        conditional: true
+    beta_schedule:
+        train:
+            schedule: linear
+            n_timestep: 2000
+            linear_start: 0.000001 #1e-6
+            linear_end: 0.01 #1e-2
+        val:
+            schedule: linear
+            n_timestep: 2000
+            linear_start: 0.000001 #1e-6
+            linear_end: 0.01 #1e-2
+diffusion:
+    image_size: 256
+    channels: 3
+    conditional: true
+
+train:
+    n_iter: 1000000
+    val_freq: 10000 #1e4
+    save_checkpoint_freq: 10000 #1e4
+    print_freq: 100
+    optimizer:
+        type: "adam"
+        lr: 0.000003 #3e-6
+    ema_scheduler:
+        step_start_ema: 5000
+        update_ema_every: 1
+        ema_decay: 0.9999
+
+wandb:
+    project: "UIE"
