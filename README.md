@@ -24,9 +24,9 @@ To make use of the [train.py](train.py) and [test.py](test.py)  the dataset fold
     |   |   ├──── ...
     |   |   └──── 90.png/
     |   ├──── target_256/
-			├──── 01.png/
-			├──── ...
-			└──── 90.png/
+		├──── 01.png/
+		├──── ...
+		└──── 90.png/
 ```
 
 ## Dataset
@@ -37,7 +37,7 @@ To make use of the [train.py](train.py) and [test.py](test.py)  the dataset fold
 
 (3) SQUID : [Data](https://csms.haifa.ac.il/profiles/tTreibitz/datasets/ambient_forwardlooking/index.html) 
 
-(4) U45 : [Data]([underwater-test-dataset-U45-/upload/U45/U45 at master · IPNUISTlegal/underwater-test-dataset-U45- (github.com)](https://github.com/IPNUISTlegal/underwater-test-dataset-U45-/tree/master/upload/U45/U45)) 
+(4) U45 : [Data](https://github.com/IPNUISTlegal/underwater-test-dataset-U45-/tree/master) 
 
 ## Evaluation
 
