@@ -43,7 +43,7 @@ To make use of the [train.py](train.py) and [test.py](test.py)  the dataset fold
 
 To resume from a checkpoint file, simply use the `--resume` argument in [test.py](test.py) to specify the checkpoint.
 
-For your convenience, we provide all paired model used in our paper. [BaiduYun](https://pan.baidu.com/s/1_woeIfvT6zpUxn-3rItPCg ) password:gms1
+For your convenience, we provide the pre-trained model in our paper. [BaiduYun](https://pan.baidu.com/s/1_woeIfvT6zpUxn-3rItPCg ) password:gms1
 
 ## Training
 
