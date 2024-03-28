@@ -52,3 +52,6 @@ To resume from a checkpoint file, simply use the `--resume` argument in  [train.
 ## Acknowledgement
 
 Our code is adapted from the original [SR3](https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement) repository. We thank the authors for sharing their code.
+
+## Contact
+If you have any questions, please contact Meisheng Guan at 1971306417@qq.com.
