@@ -1,8 +1,22 @@
 # [DiffWater: Underwater Image Enhancement Based on Conditional Denoising Diffusion Probabilistic Model](https://ieeexplore.ieee.org/document/10365517)
 
+[paper](https://ieeexplore.ieee.org/document/10365517)
+
 ```
 This Repo includes the training and testing codes of our DiffWater. (Pytorch Version)
 If you use our code, please cite our paper and hit the star at the top-right corner. Thanks!
+
+@ARTICLE{10365517,
+  author={Guan, Meisheng and Xu, Haiyong and Jiang, Gangyi and Yu, Mei and Chen, Yeyao and Luo, Ting and Zhang, Xuebo},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={DiffWater: Underwater Image Enhancement Based on Conditional Denoising Diffusion Probabilistic Model}, 
+  year={2024},
+  volume={17},
+  number={},
+  pages={2319-2335},
+  keywords={Image color analysis;Colored noise;Noise reduction;Image restoration;Image enhancement;Visualization;Lighting;Color compensation;conditional denoising diffusion probabilistic model (DDPM);underwater image enhancement (UIE)},
+  doi={10.1109/JSTARS.2023.3344453}}
+
 ```
 
 ## Environment
