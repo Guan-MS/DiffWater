@@ -1,6 +1,6 @@
-# [DiffWater: Underwater Image Enhancement Based on Conditional Denoising Diffusion Probabilistic Model](https://ieeexplore.ieee.org/document/10365517)
+# DiffWater: Underwater Image Enhancement Based on Conditional Denoising Diffusion Probabilistic Model
 
-[paper](https://ieeexplore.ieee.org/document/10365517)
+[[paper](https://ieeexplore.ieee.org/document/10365517)]
 
 ```
 This Repo includes the training and testing codes of our DiffWater. (Pytorch Version)
